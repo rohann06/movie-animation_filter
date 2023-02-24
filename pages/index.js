@@ -3,11 +3,13 @@ import { useEffect, useState } from "react";
 import Filter from "../components/Filter";
 import Movies from "../components/Movies";
 import { useStateContext } from "../context/StateContext";
+import { motion as m, AnimatePresence } from "framer-motion";
 
 export default function Home({ movies }) {
   const results = movies.results;
 
   const { filtered, setFiltered } = useStateContext();
+
   useEffect(() => {
     setFiltered(results);
   }, []);
@@ -21,18 +23,22 @@ export default function Home({ movies }) {
       </Head>
 
       <main>
-        <div>Rohan ahire</div>
         <Filter populer={results} />
 
-        <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-y-[2rem] gap-x-[1rem]">
-          {filtered.map((movie) => {
-            return (
-              <div key={movie.id}>
-                <Movies title={movie.title} image={movie.backdrop_path} />
-              </div>
-            );
-          })}
-        </div>
+        <m.div
+          layout
+          className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-y-[2rem] gap-x-[1rem]"
+        >
+          <AnimatePresence>
+            {filtered.map((movie) => {
+              return (
+                <div key={movie.id}>
+                  <Movies title={movie.title} image={movie.backdrop_path} />
+                </div>
+              );
+            })}
+          </AnimatePresence>
+        </m.div>
       </main>
     </div>
   );
