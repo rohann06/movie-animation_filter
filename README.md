@@ -18,6 +18,8 @@ I've used ![TMDB](https://www.themoviedb.org/) to get the API for the movies det
 
 When the user click on the genre button mentioned on the top right cornner the movies grid change wirth a cool anoimation...👇
 
+the website is fully responsive
+
 https://user-images.githubusercontent.com/75326769/221487627-03398b37-baa6-4d12-86a9-c0223848e597.mp4
 
 
