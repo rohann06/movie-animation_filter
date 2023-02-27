@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movie filter
+#### This project includes movie banners and a filter that shows the genre of the movies, by clicking on the genre displayed in the filter, the displayed movie banners will change accordingly with a nice animation
 
-## Getting Started
+#### The intension behind this project was to lrarn the SSR (Server Side Rendering) and Framer motion for web site animation.
 
-First, run the development server:
+## Live application
+[![Already deployed version](https://vercel.com/button)](https://movie-filter-animation-eight.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Technologies used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I've used ![TMDB](https://www.themoviedb.org/) to get the API for the movies details like image, title, and genre.    
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **NextJs**
+- **Tailwind css**
+- **Framer motion**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Functionality
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+When the user click on the genre button mentioned on the top right cornner the movies grid change wirth a cool anoimation
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
