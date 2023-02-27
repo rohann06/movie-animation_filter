@@ -1,4 +1,4 @@
-# Movie filter
+# Movie filter🎥
 #### This project includes movie banners and a filter that shows the genre of the movies, by clicking on the genre displayed in the filter, the displayed movie banners will change accordingly with a nice animation
 
 #### The intension behind this project was to lrarn the SSR (Server Side Rendering) and Framer motion for web site animation.
